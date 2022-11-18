@@ -1,0 +1,341 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Open Sans";
+    box-sizing: border-box;
+}
+.wtw_main_container {
+    padding: 24px;
+    width: 100%;
+}
+.wtw_search_bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.wtw_input_arrow {
+    background-image: url("/img/arrow.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 26px;
+    padding-right: 32px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.wtw_search_input_box {
+    position: relative;
+    width: 100%;
+    border-radius: 41px;
+    display: flex;
+    gap: 30px;
+    padding-right: 32px;
+    border: 2px solid #000000;
+}
+.wtw_search_input {
+    width: 100%;
+    font-size: 24px;
+    padding: 24px 0px;
+    margin: 0px 32px;
+    border: none;
+}
+.wtw_search_input:focus {
+    outline: none;
+}
+
+.wtw_search_btn_icon {
+    background-image: url('/img/search.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+}
+
+.wtw_search_btn {
+    padding: 18px 65px;
+    border: none;
+    border-radius: 60px;
+    background-color: #F2DA00;
+}
+@media(min-width: 1920px){
+    .wtw_search_btn {
+        padding: 18px 120px;
+    }
+}
+
+/* Waiting time */
+.wtw_wait_time_area {
+    padding-top: 24px;
+    padding-bottom: 46px;
+}
+.wtw_wait_time_text {
+    font-size: 24px;
+}
+/* Map */
+.wtw_map_container {
+    display: none;
+    width: 100%;
+    height: 60vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.wtw_map {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+/* Map information */
+.wtw_map_informatio {
+    display: flex;
+    gap: 60px;
+    margin-top: 32px;
+}
+.wtw_information_block {
+    display: flex;
+    gap: 12px;
+}
+.wtw_information_color {
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    border-radius: 50%;
+}
+.color_red {
+    background-color: #FF7B7B;
+}
+.color_green {
+    background-color: #18FF04;
+}
+.color_yellow {
+    background-color: #FFEF5E;
+}
+.color_gray {
+    background-color: #BABABA;
+}
+.wtw_information_text {
+    font-size: 24px;
+}
+@media(max-width: 956px) {
+    .wtw_map_informatio {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .wtw_information_color  {
+        max-width: 32px;
+        height: 32px;
+    }
+    .wtw_search_input, .wtw_wait_time_text, .wtw_information_text, .wtw_search_input_on, .wtw_recomendation_link {
+        font-size: 18px;
+    }
+    .wtw_search_btn {
+        padding: 18px 26px;
+    }
+    .wtw_search_input {
+        margin-right: 0px;
+    }
+}
+@media(max-width: 724px) {
+    .wtw_search_bar {
+        gap: 10px;
+    }
+}
+@media(max-width: 660px) {
+    .wtw_search_bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wtw_search_btn {
+        padding: 18px 100px;
+    }
+    .wtw_map_container {
+        height: 60vh;
+    }
+}
+.wtw_dropdown_on {
+    position: absolute;
+    width: 100%;
+    border-radius: 41px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border: 2px solid #000000;
+    padding: 0px 32px;
+    background-color: #ffffff;
+}
+.dropdown_city {
+    display: flex;
+    flex-direction: column;
+}
+.wtw_search_input_on {
+    width: 100%;
+    font-size: 24px;
+    padding: 24px 0px;
+    border: none;
+}
+.wtw_search_input_on:focus {
+    outline: none;
+}
+.wtw_input_arrow_on {
+    background-image: url('/img/arrow_on.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 26px;
+}
+.wtw_search_input_on_top_city {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dropdown_city {
+    display: none;
+    z-index: 10;
+}
+.wtw_recomendation_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.wtw_recomendation_link {
+    font-size: 24px;
+    color: #000000;
+    text-decoration: none;
+    padding: 22px 0px;
+    border-top: 1px solid #000000;
+}
+@media(max-width: 956px) {
+    .wtw_search_input_on {
+        font-size: 18px;
+    }
+    .wtw_recomendation_link {
+        font-size: 18px;
+    }
+}
+
+/* neighbouhood */
+.wtw_neighbouhood_element {
+    padding: 16px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.wtw_neighbouhood_list {
+    max-height: 620px;
+    overflow:scroll;
+    overflow-x:hidden;
+    padding: 0px 16px;
+}
+.wtw_neighbouhood_list::-webkit-scrollbar {
+    width: 12px;
+}
+.wtw_neighbouhood_list::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+.wtw_neighbouhood_list::-webkit-scrollbar-thumb {
+    background: #000000; 
+    border-radius: 10px;
+}
+.wtw_neighbouhood_list::-webkit-scrollbar-thumb:hover {
+    background: #2b2b2b; 
+}
+.wtw_neighbouhood_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 24px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+.wtw_neighbouhood_title, .wtw_neighbouhood_time {
+    font-size: 24px;
+    color: #000000;
+}
+.neighbouhood_bad {
+    border: 1px solid #FF7B7B;
+    background: rgba(255, 123, 123, 0.03);
+}
+.neighbouhood_good {
+    border:1px solid #18FF04;
+    background: rgba(24, 255, 4, 0.03);
+}
+.neighbouhood_no_data {
+    border:1px solid #BABABA;
+    background: rgba(186, 186, 186, 0.03);
+}
+.wtw_neighbouhood_time_filter {
+    display: flex;
+    gap: 24px;
+    margin-right: 62px;
+}
+.wtw_titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.wtw_neighbouhood_name {
+    font-size: 24px;
+    padding-left: 16px;
+}
+.wtw_neighbouhood_time_text {
+    font-size: 24px;
+}
+.wtw_time_filter {
+    background-image: url('/img/Filter-2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+}
+/* map btn */
+.wtw_btn_box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.wtw_map_btn {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    font-size: 24px;
+    padding: 24px 112px;
+    border: none;
+    border-radius: 100px;
+    background-color: #FFEA26;
+}
+.wtw_map_btn:hover {
+    cursor: pointer;
+}
+.wtw_map_icon {
+    background-image: url('/img/map.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 33px;
+}
+.map_active {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.btn_text_show {
+    display: flex;
+}
+.btn_text_hide {
+    display: none;
+}
+@media(max-width: 956px) {
+    .wtw_neighbouhood_title, .wtw_neighbouhood_time, .wtw_neighbouhood_name, .wtw_neighbouhood_time_text, .btn_text_hide, .btn_text_show {
+        font-size: 18px;
+    }
+}

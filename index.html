@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wtw_main_container" id="wtw_main_container">
+        <div class="wtw_search_bar" id="wtw_search_bar">
+            <div class="wtw_search_input_box" id="wtw_search_input_box_city">
+                <input type="text" class="wtw_search_input" id="wtw_search_input" placeholder="Select city">
+                <div class="wtw_input_arrow" id="wtw_input_arrow_1"></div>
+                <!-- clicked dropdown -->
+                <div class="wtw_dropdown_on dropdown_city" id="wtw_dropdown_on_city">
+                    <div class="wtw_search_input_on_top wtw_search_input_on_top_city" id="wtw_search_input_on_top">
+                        <input type="text" class="wtw_search_input_on" id="wtw_search_input_on_city" placeholder="Select city">
+                        <div class="wtw_input_arrow_on" id="wtw_input_arrow_on_city"></div>
+                    </div>
+                    <div class="wtw_recomendation_list" id="wtw_recomendation_list">
+                        <a href="#" class="wtw_recomendation_link" id="wtw_recomendation_link">Lorem Ipsum Dolor 53, Lorem Ipsum</a>
+                        <a href="#" class="wtw_recomendation_link" id="wtw_recomendation_link">Lorem Ipsum Dolor 53, Lorem Ipsum</a>
+                        <a href="#" class="wtw_recomendation_link" id="wtw_recomendation_link">Lorem Ipsum Dolor 53, Lorem Ipsum</a>
+                        <a href="#" class="wtw_recomendation_link" id="wtw_recomendation_link">Lorem Ipsum Dolor 53, Lorem Ipsum</a>
+                    </div>
+                </div>
+                <!-- -->
+            </div>
+            <div class="wtw_search_input_box" id="wtw_search_input_box_province">
+                <input type="text" class="wtw_search_input" id="wtw_search_input_province" placeholder="Select province">
+                <div class="wtw_input_arrow" id="wtw_input_arrow_2"></div>
+                <!-- clicked dropdown -->
+                <div class="wtw_dropdown_on dropdown_city" id="wtw_dropdown_on_province">
+                    <div class="wtw_search_input_on_top wtw_search_input_on_top_city" id="wtw_search_input_on_top">
+                        <input type="text" class="wtw_search_input_on" id="wtw_search_input_on_province" placeholder="Select province">
+                        <div class="wtw_input_arrow_on" id="wtw_input_arrow_on_province"></div>
+                    </div>
+                    <div class="wtw_recomendation_list" id="wtw_recomendation_list">
+                        <a href="#" class="wtw_recomendation_link" id="wtw_recomendation_link">Lorem Ipsum Dolor 53, Lorem Ipsum</a>
+                        <a href="#" class="wtw_recomendation_link" id="wtw_recomendation_link">Lorem Ipsum Dolor 53, Lorem Ipsum</a>
+                        <a href="#" class="wtw_recomendation_link" id="wtw_recomendation_link">Lorem Ipsum Dolor 53, Lorem Ipsum</a>
+                        <a href="#" class="wtw_recomendation_link" id="wtw_recomendation_link">Lorem Ipsum Dolor 53, Lorem Ipsum</a>
+                    </div>
+                </div>
+                <!-- -->
+            </div>
+            <button class="wtw_search_btn" id="wtw_search_btn">
+                <div class="wtw_search_btn_icon" id="wtw_search_btn_icon"></div>
+            </button>
+        </div>
+        <div class="wtw_neighbouhood_element" id="wtw_neighbouhood_element">
+            <div class="wtw_titles" id="wtw_titles">
+                <p class="wtw_neighbouhood_name" id="wtw_neighbouhood_name">Neighbouhood</p>
+                <div class="wtw_neighbouhood_time_filter" id="wtw_neighbouhood_time">
+                    <p class="wtw_neighbouhood_time_text" id="wtw_neighbouhood_time_text">Time</p>
+                    <div class="wtw_time_filter" id="wtw_time_filter"></div>
+                </div>
+            </div>
+            <div class="wtw_neighbouhood_list" id="wtw_neighbouhood_list">
+                <div class="wtw_neighbouhood_item neighbouhood_bad" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_good" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_no_data" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_no_data" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_bad" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_bad" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_good" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_good" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_bad" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_good" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_no_data" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_no_data" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_bad" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_bad" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_good" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_good" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+                <div class="wtw_neighbouhood_item neighbouhood_bad" id="wtw_neighbouhood_item">
+                    <p class="wtw_neighbouhood_title" id="wtw_neighbouhood_title">Lorem Ipsum dolor</p>
+                    <p class="wtw_neighbouhood_time" id="wtw_neighbouhood_time">Dec 05, 2022</p>
+                </div>
+            </div>
+        </div>
+        <div class="wtw_btn_box" id="wtw_btn_box">
+            <button class="wtw_map_btn" id="wtw_map_btn" onClick="showMap()">
+                <p class="wtw_btn_text btn_text_show" id="wtw_btn_text_show">Show map</p>
+                <p class="wtw_btn_text btn_text_hide" id="wtw_btn_text_hide">Hide map</p>
+                <div class="wtw_map_icon" id="wtw_map_icon">
+                </div>
+            </button>
+        </div>
+        <div class="wtw_map_container map_active" id="wtw_map_container">
+            <img src="/img/map_image.jpg" class="wtw_map" id="wtw_map" alt="map">
+        </div>
+    </div>
+
+    <script>
+        const clickArrow = document.getElementById("wtw_input_arrow_1");
+        const searchInputBoxCity = document.getElementById("wtw_search_input_box_city");
+        const dropdownCityOn = document.getElementById("wtw_dropdown_on_city");
+        const clickArrowOn = document.getElementById("wtw_input_arrow_on_city");
+        clickArrow.addEventListener("click", openDropdown);
+        function openDropdown(e) {
+            dropdownCityOn.style.display = "flex";
+            searchInputBoxCity.style.border = "none";
+            document.getElementById("wtw_search_input_on_city").focus();
+        };
+        clickArrowOn.addEventListener("click", closeDropdown);
+        function closeDropdown() {
+            dropdownCityOn.style.display = "none";
+            searchInputBoxCity.style.border = "2px solid #000000";
+        }
+        // ==============
+        const clickArrowTwo = document.getElementById("wtw_input_arrow_2");
+        const searchInputBoxProvince = document.getElementById("wtw_search_input_box_province");
+        const dropdownProvinceOn = document.getElementById("wtw_dropdown_on_province");
+        const clickArrowOnTwo = document.getElementById("wtw_input_arrow_on_province");
+        clickArrowTwo.addEventListener("click", openDropdownTwo);
+        function openDropdownTwo(e) {
+            dropdownProvinceOn.style.display = "flex";
+            searchInputBoxProvince.style.border = "none";
+            document.getElementById("wtw_search_input_on_province").focus();
+        };
+        console.log('Window width',window.screen.width);
+        clickArrowOnTwo.addEventListener("click", closeDropdownTwo);
+        function closeDropdownTwo() {
+            dropdownProvinceOn.style.display = "none";
+            searchInputBoxProvince.style.border = "2px solid #000000";
+        };
+        const mapBtn = document.getElementById("wtw_map_btn");
+        const map = document.getElementById("wtw_map_container");
+        const mapBtnTextShow = document.getElementById("wtw_btn_text_show");
+        const mapBtnTextHide = document.getElementById("wtw_btn_text_hide");
+        
+        var isClicked = true;
+        function showMap() {
+            if(isClicked) {
+                map.style.display = "flex";
+                mapBtnTextShow.style.display = "none";
+                mapBtnTextHide.style.display = "flex";
+                isClicked = false;
+            } else {
+                map.style.display = "none";
+                mapBtnTextShow.style.display = "flex";
+                mapBtnTextHide.style.display = "none";
+                isClicked = true;
+            };
+        };
+    </script>
+</body>
+</html>
